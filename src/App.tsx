@@ -9,6 +9,8 @@ import photo8 from './assets/photo8.jpg'
 import photo9 from './assets/photo9.jpg'
 import reference from './assets/reference.jpg'
 
+const LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzQ0MaMDmIdAZKlNAN9EfF72C2jvyLPcvQkr4NateSKp8U_2U33avrpZUA2mBrve7s/exec'
+
 const NAV_LINKS = ['Services', 'About', 'Gallery', 'Testimonials', 'Contact']
 
 const SERVICES = [
@@ -98,10 +100,27 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setSubmitted(true)
+    setIsSubmitting(true)
+    setSubmitError(false)
+    try {
+      await fetch(LEADS_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(formData),
+      })
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Lead submission failed', err)
+      setSubmitError(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -401,10 +420,16 @@ export default function App() {
                     onBlur={e => (e.currentTarget.style.borderColor = 'rgba(43,181,216,0.2)')} />
                 </div>
 
-                <button type="submit" style={{ background: '#2bb5d8', color: '#050d1a', fontWeight: 700, fontSize: 14, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '18px 36px', borderRadius: 4, border: 'none', cursor: 'pointer', transition: 'all 0.2s', marginTop: 4 }}
-                  onMouseEnter={e => { e.currentTarget.style.background = '#5ecfec'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+                {submitError && (
+                  <div style={{ color: '#f87171', fontSize: 13, background: 'rgba(248,113,113,0.08)', border: '1px solid rgba(248,113,113,0.25)', borderRadius: 4, padding: '12px 16px' }}>
+                    Something went wrong sending your request. Please try again or call us directly.
+                  </div>
+                )}
+
+                <button type="submit" disabled={isSubmitting} style={{ background: '#2bb5d8', color: '#050d1a', fontWeight: 700, fontSize: 14, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '18px 36px', borderRadius: 4, border: 'none', cursor: isSubmitting ? 'default' : 'pointer', opacity: isSubmitting ? 0.7 : 1, transition: 'all 0.2s', marginTop: 4 }}
+                  onMouseEnter={e => { if (!isSubmitting) { e.currentTarget.style.background = '#5ecfec'; e.currentTarget.style.transform = 'translateY(-2px)' } }}
                   onMouseLeave={e => { e.currentTarget.style.background = '#2bb5d8'; e.currentTarget.style.transform = 'translateY(0)' }}>
-                  Request Free Estimate
+                  {isSubmitting ? 'Sending…' : 'Request Free Estimate'}
                 </button>
               </form>
             )}
