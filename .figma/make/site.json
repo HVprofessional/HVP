@@ -1,0 +1,10 @@
+{
+  "description": "Showcase H.V. Professional Paint's luxury painting services with a sleek, user-friendly website that highlights their 20 years of expertise and craftsmanship.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
