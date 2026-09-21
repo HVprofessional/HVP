@@ -1,4 +1,13 @@
 import { useState } from 'react'
+import photo1 from './assets/photo1.jpg'
+import photo2 from './assets/photo2.jpg'
+import photo3 from './assets/photo3.jpg'
+import photo5 from './assets/photo5.jpg'
+import photo6 from './assets/photo6.jpg'
+import photo7 from './assets/photo7.jpg'
+import photo8 from './assets/photo8.jpg'
+import photo9 from './assets/photo9.jpg'
+import reference from './assets/reference.jpg'
 
 const NAV_LINKS = ['Services', 'About', 'Gallery', 'Testimonials', 'Contact']
 
@@ -60,27 +69,27 @@ const TESTIMONIALS = [
 
 const GALLERY_IMAGES = [
   {
-    url: '/src/assets/photo3.jpg',
+    url: photo3,
     label: 'Grand Foyer — Dallas, TX',
   },
   {
-    url: '/src/assets/photo2.jpg',
+    url: photo2,
     label: 'Exterior — Highland Park, TX',
   },
   {
-    url: '/src/assets/photo5.jpg',
+    url: photo5,
     label: 'Vaulted Ceiling — Frisco, TX',
   },
   {
-    url: '/src/assets/photo7.jpg',
+    url: photo7,
     label: 'Pool Home Exterior — University Park, TX',
   },
   {
-    url: '/src/assets/photo8.jpg',
+    url: photo8,
     label: 'Tudor Exterior — Dallas, TX',
   },
   {
-    url: '/src/assets/photo6.jpg',
+    url: photo6,
     label: 'Modern Exterior — Lakewood, TX',
   },
 ]
@@ -102,7 +111,7 @@ export default function App() {
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(5,13,26,0.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(43,181,216,0.15)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 72 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <img src="/src/assets/reference.jpg" alt="H.V. Professional Paint logo" style={{ width: 48, height: 48, borderRadius: '50%', objectFit: 'cover', border: '2px solid #2bb5d8' }} />
+            <img src={reference} alt="H.V. Professional Paint logo" style={{ width: 48, height: 48, borderRadius: '50%', objectFit: 'cover', border: '2px solid #2bb5d8' }} />
             <div>
               <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 17, color: '#fff', letterSpacing: '-0.01em', lineHeight: 1.1 }}>H.V. Professional Paint</div>
               <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Since 2004 · Dallas, TX</div>
@@ -147,7 +156,7 @@ export default function App() {
 
       {/* HERO */}
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden', paddingTop: 72 }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(/src/assets/photo9.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.25)' }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${photo9})`, backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.25)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(5,13,26,0.9) 0%, rgba(10,22,40,0.6) 50%, rgba(5,13,26,0.85) 100%)' }} />
 
         {/* Decorative diagonal */}
@@ -249,7 +258,7 @@ export default function App() {
           </div>
 
           <div style={{ position: 'relative' }}>
-            <img src="/src/assets/photo1.jpg" alt="H.V. painter at work" style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block', borderRadius: 2 }} />
+            <img src={photo1} alt="H.V. painter at work" style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block', borderRadius: 2 }} />
             <div style={{ position: 'absolute', bottom: -24, left: -24, background: '#2bb5d8', padding: '24px 32px', borderRadius: 2 }}>
               <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 36, fontWeight: 700, color: '#050d1a', lineHeight: 1 }}>20+</div>
               <div style={{ fontSize: 13, color: '#0a1628', fontWeight: 600, letterSpacing: '0.06em', marginTop: 4 }}>Years of Excellence</div>
@@ -445,7 +454,7 @@ export default function App() {
           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: 60, marginBottom: 60 }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
-                <img src="/src/assets/reference.jpg" alt="H.V. logo" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover', border: '2px solid #2bb5d8' }} />
+                <img src={reference} alt="H.V. logo" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover', border: '2px solid #2bb5d8' }} />
                 <div>
                   <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 16, color: '#fff' }}>H.V. Professional Paint</div>
                   <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.1em' }}>Dallas–Fort Worth, TX</div>
