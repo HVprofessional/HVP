@@ -114,7 +114,7 @@ export default function App() {
             <img src={reference} alt="H.V. Professional Paint logo" style={{ width: 48, height: 48, borderRadius: '50%', objectFit: 'cover', border: '2px solid #2bb5d8' }} />
             <div>
               <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 17, color: '#fff', letterSpacing: '-0.01em', lineHeight: 1.1 }}>H.V. Professional Paint</div>
-              <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Since 2004 · Dallas, TX</div>
+              <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Since 2002 · Dallas, TX</div>
             </div>
           </div>
 
