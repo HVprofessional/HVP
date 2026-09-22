@@ -194,7 +194,7 @@ export default function App() {
             </h1>
 
             <p style={{ fontSize: 18, lineHeight: 1.7, color: '#8aa8c0', marginBottom: 44, maxWidth: 520 }}>
-              H.V. Professional Paint delivers flawless interior and exterior finishes to discerning homeowners across the Dallas–Fort Worth area. Call us at <a href="tel:2149620467" style={{ color: '#2bb5d8', textDecoration: 'none', fontWeight: 600 }}>214 962 0467</a>.
+              H.V. Professional Paint delivers flawless interior and exterior finishes to discerning homeowners in Highland Park, University Park, and across the Dallas–Fort Worth area. Whether you're refreshing one room or tackling a full home renovation and remodeling project, our painters bring precision to every job. Call us at <a href="tel:2149620467" style={{ color: '#2bb5d8', textDecoration: 'none', fontWeight: 600 }}>214 962 0467</a>.
             </p>
 
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
@@ -261,7 +261,7 @@ export default function App() {
               <em style={{ color: '#2bb5d8', fontStyle: 'italic' }}>Trusted Craftsmanship</em>
             </h2>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 20 }}>
-              Founded in 2002, H.V. Professional Paint has built a reputation across the Dallas–Fort Worth metroplex for delivering premium results on time, every time. We combine old-world attention to detail with modern materials and techniques.
+              Founded in 2002, H.V. Professional Paint has built a reputation among homeowners in Highland Park, University Park, and across the Dallas–Fort Worth metroplex for delivering premium results on time, every time. As trusted local painters, we're a go-to partner for home renovation and remodeling projects — combining old-world attention to detail with modern materials and techniques.
             </p>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 40 }}>
               Our team of licensed and insured painters treats every home as if it were our own — carefully preparing surfaces, using only top-tier paints, and leaving no trace except for the beautiful finish.
@@ -446,7 +446,7 @@ export default function App() {
               Based in <em style={{ color: '#2bb5d8', fontStyle: 'italic' }}>Highland Park, TX</em>
             </h2>
             <p style={{ fontSize: 16, color: '#8aa8c0', marginTop: 16, maxWidth: 440, margin: '16px auto 0' }}>
-              Proudly serving the entire Dallas–Fort Worth metroplex for over 20 years.
+              Proudly serving Highland Park, University Park, and the entire Dallas–Fort Worth metroplex for over 20 years.
             </p>
           </div>
 
