@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import photo1 from './assets/photo1.jpg'
+import founder from './assets/founder.jpg'
 import photo2 from './assets/photo2.jpg'
 import photo3 from './assets/photo3.jpg'
 import photo5 from './assets/photo5.jpg'
@@ -261,7 +261,7 @@ export default function App() {
               <em style={{ color: '#2bb5d8', fontStyle: 'italic' }}>Trusted Craftsmanship</em>
             </h2>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 20 }}>
-              Founded in 2002, H.V. Professional Paint has built a reputation among homeowners in Highland Park, University Park, and across the Dallas–Fort Worth metroplex for delivering premium results on time, every time. As trusted local painters, we're a go-to partner for home renovation and remodeling projects — combining old-world attention to detail with modern materials and techniques.
+              Founded in 2002 by Hugo Vazquez, H.V. Professional Paint has built a reputation among homeowners in Highland Park, University Park, and across the Dallas–Fort Worth metroplex for delivering premium results on time, every time. As trusted local painters, we're a go-to partner for home renovation and remodeling projects — combining old-world attention to detail with modern materials and techniques.
             </p>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 40 }}>
               Our team of top-tier, experienced painters treats every home as if it were our own — carefully preparing surfaces, using only premium paints, and leaving no trace except for the beautiful finish.
@@ -277,12 +277,16 @@ export default function App() {
           </div>
 
           <div style={{ position: 'relative' }}>
-            <img src={photo1} alt="H.V. painter at work" style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block', borderRadius: 2 }} />
+            <img src={founder} alt="Hugo Vazquez, founder of H.V. Professional Paint, hand-finishing custom cabinetry" style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block', borderRadius: 2 }} />
             <div style={{ position: 'absolute', bottom: -24, left: -24, background: '#2bb5d8', padding: '24px 32px', borderRadius: 2 }}>
               <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 36, fontWeight: 700, color: '#050d1a', lineHeight: 1 }}>20+</div>
               <div style={{ fontSize: 13, color: '#0a1628', fontWeight: 600, letterSpacing: '0.06em', marginTop: 4 }}>Years of Excellence</div>
             </div>
             <div style={{ position: 'absolute', top: -16, right: -16, width: 80, height: 80, border: '2px solid rgba(43,181,216,0.3)', borderRadius: 2 }} />
+            <div style={{ position: 'absolute', top: 20, left: 20, background: 'rgba(5,13,26,0.75)', backdropFilter: 'blur(4px)', padding: '10px 18px', borderRadius: 4, border: '1px solid rgba(43,181,216,0.3)' }}>
+              <div style={{ fontSize: 13, color: '#fff', fontWeight: 600 }}>Hugo Vazquez</div>
+              <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Founder</div>
+            </div>
           </div>
         </div>
       </section>
