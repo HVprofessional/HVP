@@ -8,6 +8,12 @@ import photo7 from './assets/photo7.jpg'
 import photo8 from './assets/photo8.jpg'
 import photo9 from './assets/photo9.jpg'
 import reference from './assets/reference.jpg'
+import kitchenWhite from './assets/kitchen-white.jpg'
+import entryStaircase from './assets/entry-staircase.jpg'
+import greatRoomBeams from './assets/great-room-beams.jpg'
+import exteriorStucco from './assets/exterior-stucco.jpg'
+import exteriorModern from './assets/exterior-modern.jpg'
+import staircaseLoft from './assets/staircase-loft.jpg'
 
 const LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzQ0MaMDmIdAZKlNAN9EfF72C2jvyLPcvQkr4NateSKp8U_2U33avrpZUA2mBrve7s/exec'
 
@@ -70,6 +76,30 @@ const TESTIMONIALS = [
 ]
 
 const GALLERY_IMAGES = [
+  {
+    url: kitchenWhite,
+    label: 'Kitchen Cabinetry — Dallas–Fort Worth, TX',
+  },
+  {
+    url: entryStaircase,
+    label: 'Entryway Millwork — Dallas–Fort Worth, TX',
+  },
+  {
+    url: greatRoomBeams,
+    label: 'Great Room — Dallas–Fort Worth, TX',
+  },
+  {
+    url: exteriorStucco,
+    label: 'Custom Exterior — Dallas–Fort Worth, TX',
+  },
+  {
+    url: exteriorModern,
+    label: 'Modern Exterior — Dallas–Fort Worth, TX',
+  },
+  {
+    url: staircaseLoft,
+    label: 'Interior Staircase — Dallas–Fort Worth, TX',
+  },
   {
     url: photo3,
     label: 'Grand Foyer — Dallas, TX',
