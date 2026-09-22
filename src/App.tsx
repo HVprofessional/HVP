@@ -264,7 +264,7 @@ export default function App() {
               Founded in 2002, H.V. Professional Paint has built a reputation among homeowners in Highland Park, University Park, and across the Dallas–Fort Worth metroplex for delivering premium results on time, every time. As trusted local painters, we're a go-to partner for home renovation and remodeling projects — combining old-world attention to detail with modern materials and techniques.
             </p>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 40 }}>
-              Our team of licensed and insured painters treats every home as if it were our own — carefully preparing surfaces, using only top-tier paints, and leaving no trace except for the beautiful finish.
+              Our team of top-tier, experienced painters treats every home as if it were our own — carefully preparing surfaces, using only premium paints, and leaving no trace except for the beautiful finish.
             </p>
             <div style={{ display: 'flex', gap: 40 }}>
               {[['Licensed', '& Insured'], ['Free', 'Estimates'], ['5-Year', 'Warranty']].map(([a, b], i) => (
