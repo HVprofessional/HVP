@@ -267,7 +267,7 @@ export default function App() {
               Our team of top-tier, experienced painters treats every home as if it were our own — carefully preparing surfaces, using only premium paints, and leaving no trace except for the beautiful finish.
             </p>
             <div style={{ display: 'flex', gap: 40 }}>
-              {[['Licensed', '& Insured'], ['Free', 'Estimates'], ['5-Year', 'Warranty']].map(([a, b], i) => (
+              {[['Free', 'Estimates']].map(([a, b], i) => (
                 <div key={i}>
                   <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 20, fontWeight: 700, color: '#2bb5d8' }}>{a}</div>
                   <div style={{ fontSize: 13, color: '#8aa8c0', marginTop: 2 }}>{b}</div>
@@ -486,7 +486,7 @@ export default function App() {
                 </div>
               </div>
               <p style={{ fontSize: 14, color: '#8aa8c0', lineHeight: 1.8, maxWidth: 320 }}>
-                Two decades of premium painting services for residential and commercial clients across the DFW metroplex. Licensed, insured, and dedicated to excellence.
+                Two decades of premium painting services for residential and commercial clients across the DFW metroplex. Dedicated to excellence.
               </p>
             </div>
 
@@ -509,7 +509,7 @@ export default function App() {
 
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: 28, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
             <div style={{ fontSize: 13, color: '#4a6070' }}>© 2024 H.V. Professional Paint. All rights reserved.</div>
-            <div style={{ fontSize: 13, color: '#4a6070' }}>Licensed · Insured · 20+ Years of Excellence</div>
+            <div style={{ fontSize: 13, color: '#4a6070' }}>20+ Years of Excellence</div>
           </div>
         </div>
       </footer>
