@@ -31,6 +31,11 @@ const SERVICES = [
     desc: "Weather-resistant, precision-applied coatings that protect and beautify your home's facade for years to come.",
   },
   {
+    icon: '💦',
+    title: 'Power Washing',
+    desc: 'Pressure washing for siding, driveways, decks, and walkways — the ideal prep step before a fresh coat of paint or a full exterior remodel.',
+  },
+  {
     icon: '✨',
     title: 'Cabinet Refinishing',
     desc: 'Restore or reinvent your cabinetry with our expert spray and brush finishes — no replacement needed.',
@@ -163,7 +168,7 @@ export default function App() {
             <img src={reference} alt="H.V. Professional Paint logo" style={{ width: 48, height: 48, borderRadius: '50%', objectFit: 'cover', border: '2px solid #2bb5d8' }} />
             <div>
               <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 17, color: '#fff', letterSpacing: '-0.01em', lineHeight: 1.1 }}>H.V. Professional Paint</div>
-              <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Since 2002 · Dallas, TX</div>
+              <div style={{ fontSize: 11, color: '#2bb5d8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Painting &amp; Remodeling · Since 2002</div>
             </div>
           </div>
 
@@ -224,7 +229,7 @@ export default function App() {
             </h1>
 
             <p style={{ fontSize: 18, lineHeight: 1.7, color: '#8aa8c0', marginBottom: 44, maxWidth: 520 }}>
-              H.V. Professional Paint delivers flawless interior and exterior finishes to discerning homeowners in Highland Park, University Park, and across the Dallas–Fort Worth area. Whether you're refreshing one room or tackling a full home renovation and remodeling project, our painters bring precision to every job. Call us at <a href="tel:2149620467" style={{ color: '#2bb5d8', textDecoration: 'none', fontWeight: 600 }}>214 962 0467</a>.
+              H.V. Professional Paint is a painting and remodeling company delivering flawless interior and exterior finishes, power washing, and full home renovations to discerning homeowners in Highland Park, University Park, and across the Dallas–Fort Worth area. Whether you're refreshing one room or tackling a full remodel, our team brings precision to every job. Call us at <a href="tel:2149620467" style={{ color: '#2bb5d8', textDecoration: 'none', fontWeight: 600 }}>214 962 0467</a>.
             </p>
 
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
@@ -266,11 +271,11 @@ export default function App() {
         <div style={{ textAlign: 'center', marginBottom: 72 }}>
           <div style={{ fontSize: 12, color: '#2bb5d8', letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 16, fontWeight: 600 }}>What We Offer</div>
           <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(32px, 4vw, 52px)', fontWeight: 700, color: '#fff', lineHeight: 1.15, marginBottom: 20 }}>
-            Comprehensive Painting<br />
+            Painting &amp; Remodeling<br />
             <em style={{ color: '#2bb5d8', fontStyle: 'italic' }}>Services</em>
           </h2>
           <p style={{ fontSize: 17, color: '#8aa8c0', maxWidth: 520, margin: '0 auto', lineHeight: 1.7 }}>
-            Every project is approached with the same commitment to quality — whether it's a single room or an entire estate.
+            Every project is approached with the same commitment to quality — whether it's a single room, a full exterior refresh, or a whole-home remodel.
           </p>
         </div>
 
@@ -291,7 +296,7 @@ export default function App() {
               <em style={{ color: '#2bb5d8', fontStyle: 'italic' }}>Trusted Craftsmanship</em>
             </h2>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 20 }}>
-              Founded in 2002 by Hugo Vazquez, H.V. Professional Paint has built a reputation among homeowners in Highland Park, University Park, and across the Dallas–Fort Worth metroplex for delivering premium results on time, every time. As trusted local painters, we're a go-to partner for home renovation and remodeling projects — combining old-world attention to detail with modern materials and techniques.
+              Founded in 2002 by Hugo Vazquez, H.V. Professional Paint has grown from a painting company into a trusted painting and remodeling partner for homeowners in Highland Park, University Park, and across the Dallas–Fort Worth metroplex — delivering premium results on time, every time. From interior and exterior painting to power washing and full home renovation and remodeling projects, we combine old-world attention to detail with modern materials and techniques.
             </p>
             <p style={{ fontSize: 16, color: '#8aa8c0', lineHeight: 1.8, marginBottom: 40 }}>
               Our team of top-tier, experienced painters treats every home as if it were our own — carefully preparing surfaces, using only premium paints, and leaving no trace except for the beautiful finish.
@@ -520,13 +525,13 @@ export default function App() {
                 </div>
               </div>
               <p style={{ fontSize: 14, color: '#8aa8c0', lineHeight: 1.8, maxWidth: 320 }}>
-                Two decades of premium painting services for residential and commercial clients across the DFW metroplex. Dedicated to excellence.
+                Two decades of premium painting, remodeling, and power washing services for residential and commercial clients across the DFW metroplex. Dedicated to excellence.
               </p>
             </div>
 
             <div>
               <div style={{ fontSize: 12, color: '#2bb5d8', letterSpacing: '0.14em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 20 }}>Services</div>
-              {['Interior Painting', 'Exterior Painting', 'Cabinet Refinishing', 'Color Consultation', 'Commercial Painting'].map(s => (
+              {['Interior Painting', 'Exterior Painting', 'Power Washing', 'Cabinet Refinishing', 'Color Consultation', 'Commercial Painting'].map(s => (
                 <div key={s} style={{ fontSize: 14, color: '#8aa8c0', marginBottom: 10 }}>{s}</div>
               ))}
             </div>
@@ -537,6 +542,7 @@ export default function App() {
                 <div><a href="tel:2149620467" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600 }}>214 962 0467</a></div>
                 <div style={{ marginTop: 8 }}>Dallas–Fort Worth<br />Metroplex, TX</div>
                 <div style={{ marginTop: 8 }}>Mon–Sat · 7am–6pm</div>
+                <div style={{ marginTop: 16, fontSize: 12, color: '#4a6070', lineHeight: 1.6 }}>Subcontractors: interested in joining our trade network? <a href="tel:2149620467" style={{ color: '#2bb5d8', textDecoration: 'none' }}>Give us a call</a>.</div>
               </div>
             </div>
           </div>
