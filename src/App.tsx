@@ -46,9 +46,9 @@ const SERVICES = [
     desc: 'Our certified color specialists guide you to the perfect palette that complements your architecture and lifestyle.',
   },
   {
-    icon: '🏢',
-    title: 'Commercial Painting',
-    desc: 'Minimal disruption, maximum impact for offices, retail spaces, and multi-unit residential properties.',
+    icon: '🏺',
+    title: 'Special Finishes',
+    desc: 'Plaster, Venetian plaster, and other decorative finishes that bring texture, depth, and old-world character to any room.',
   },
 ]
 
@@ -531,7 +531,7 @@ export default function App() {
 
             <div>
               <div style={{ fontSize: 12, color: '#2bb5d8', letterSpacing: '0.14em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 20 }}>Services</div>
-              {['Interior Painting', 'Exterior Painting', 'Power Washing', 'Cabinet Refinishing', 'Color Consultation', 'Commercial Painting'].map(s => (
+              {['Interior Painting', 'Exterior Painting', 'Power Washing', 'Cabinet Refinishing', 'Color Consultation', 'Special Finishes'].map(s => (
                 <div key={s} style={{ fontSize: 14, color: '#8aa8c0', marginBottom: 10 }}>{s}</div>
               ))}
             </div>
